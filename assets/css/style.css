@@ -40,12 +40,27 @@ html {
   position: relative;
 }
 
-#nav .subnav {
-  /* display: none; */
-  position: absolute;
+#nav .subnav li {
+  display: block;
 }
 
-#nav li a {
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px #ddd;
+}
+
+#nav .subnav a {
+  display: block;
+  color: #000;
+  min-width: 200px;
+  padding: 12px;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+#nav > li > a {
   display: inline-block;
   color: #fff;
   text-decoration: none;
@@ -55,14 +70,18 @@ html {
   transition: all linear 0.2s;
 }
 
-#nav li:hover a {
+#nav .subnav li:hover a,
+#nav > li:hover > a {
   background-color: #ccc;
   color: #000;
 }
 
+#nav li:hover .subnav {
+  display: block;
+}
+
 #slider {
-  min-height: 200px;
-  background-color: #333;
+
 }
 
 #content {
