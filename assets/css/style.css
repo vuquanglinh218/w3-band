@@ -27,17 +27,26 @@ html {
 }
 
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 46px;
   background-color: #000;
 }
 
 #nav {
+  display: inline-block;
   list-style: none;
 }
 
 #nav li {
   display: inline-block;
   position: relative;
+}
+
+#nav .nav-down-icon {
+  font-size: 14px;
 }
 
 #nav .subnav li {
@@ -80,12 +89,30 @@ html {
   display: block;
 }
 
+#header .search-btn {
+  float: right;
+  line-height: 46px;
+  padding: 0px 21px;
+}
+
+#header .search-btn:hover {
+  cursor: pointer;
+  background-color: #f44336;
+}
+
+#header .search-icon {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 #slider {
 
 }
 
 #content {
-
+  height: 1000px;
+  background-color: #ddd;
 }
 
 #footer {
