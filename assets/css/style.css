@@ -21,6 +21,9 @@ html {
 3.Màu sắc
 4.Kiểu dáng (kiểu chữ, hình tròn, hình vuông, ...)
 */
+.clear {
+  clear: both;
+}
 
 #main {
   
@@ -132,9 +135,59 @@ html {
   margin-top: 20px;
 }
 
-
 #content {
   height: 2000px;
+}
+
+#content .content-section {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+}
+
+#content .section-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+#content .about-text {
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+#content .member-list {
+  margin-top: 32px;
+}
+
+#content .member-item {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
+
+#content .member-name {
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+#content .member-img {
+  width: 60%;
+  border-radius: 4px;
 }
 
 #footer {
